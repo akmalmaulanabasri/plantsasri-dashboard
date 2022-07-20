@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    transition: all 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+table{
+    border: 0;
+}
+
+tr {
+    /* display: block; */
+    margin-bottom: 10px;
+    display: flex;
+    border: 0;
+    justify-content: space-around;
+    height: 4rem;
+    align-items: center;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.table td, .table th, .table thead th{
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-item span{
+    margin-left: 55px;
+}
+
+.nav-item .nav-logo{
+    position: absolute;
+    left: 0px;
+    width: 60px;
+    height: 38px;
+    object-fit: contain;
+    border-radius: 0px 20px 20px 0px;
+    text-align: right;
+}
+
+.nav-item .active{
+    /* top: 240px; */
+    background: #2DB878;
+    box-shadow: 0px -8px 125px rgba(0, 0, 0, 0.105), 0px -1.00172px 15.6519px rgba(0, 0, 0, 0.21);
+}
+
+@media (max-width: 992px) {
+    .sidebar .nav-item .nav-link span {
+        font-size: .85rem;
+        display: none;
+    }
+
+    .welcome{
+        display: none;
+    }
+
+    .user{
+        margin: auto;
+    }
+
+    .nav-item .nav-logo {
+        margin: auto;
+        position: relative;
+        width: 60px;
+        height: 38px;
+        object-fit: contain;
+        border-radius: 20px 20px 20px 20px;
+        text-align: right;
+    }
+}
+
+.navbar-nav i{
+    font-size: 1.5rem;
+    margin-right: 25px;
+    position: relative;
+}
+
+.navbar-nav i .badge{
+    top: 0;
+    position: absolute;
+    font-size: 0.5rem;
+    margin-left: -2px;
+    margin-top: -5px;
+    padding: 0.3rem;
+}
+
+.pagination .page-item.active .page-link{
+    border-radius: 5px !important;
+    background-color: #2DB777;
+    color: #fff;
+}
+
+.pagination .page-item .page-link{
+    color: rgb(100, 100, 100);
+    border-radius: 0 !important;
+    background-color: #F8F9FC;
+    border-radius: 5px;
+}
+
+.page-link{
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+}

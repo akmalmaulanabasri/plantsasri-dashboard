@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Plantsasri - Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+    <link href="asset/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body id="page-top" class="bg-light">
+
+    <div id="wrapper">
+
+        <ul class="navbar-nav bg-white sidebar sidebar-light accordion" id="accordionSidebar">
+
+            <a class="sidebar-brand d-flex align-items-center justify-content-center m-3 mt-4" href="index.html">
+                <div class="sidebar-brand-icon mx-3"><img src="asset/img/logo.png" class="img-fluid" alt=""></div>
+            </a>
+
+            <li class="nav-item">
+                <div class="d-flex nav-link">
+                    <img src="asset/img/user.png" alt="" class="user rounded-circle img-fluid">
+                    <div class="ml-2 welcome">
+                        <div class="text">Morning,</div>
+                        <div class="text-bold text-dark strong">Jamal VHR <i class="fas fa-angle-down"></i></div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center text-left" href="index.html"><img
+                        src="asset/img/dashboard.png" class="active p-2 nav-logo img-fluid" alt=""><span> My
+                        Dashboard</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center text-left" href="index.html"><img
+                        src="asset/img/trx-black.png" class="p-2 nav-logo img-fluid" alt="">
+                    <span>Transaction</span></a>
+            </li>
+        </ul>
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <ul class="navbar-nav ml-auto">
+                        <i class="fas fa-bell"><span class="badge badge-success">2</span></i>
+                        <i class="fas fa-power-off"></i>
+                    </ul>
+                </nav>
+
+                <div class="container-fluid">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <div class="">
+                            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                            <h5 class="mt-2"><span class="text-success">Plantsasri </span> / Dashboard</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card primary shadow h-100 rounded-3  py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto bg-primary p-3 rounded-circle">
+                                            <img src="asset/img/fundarising.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col ml-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                                Total Income</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$ 1000,00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card success shadow h-100 rounded-3  py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto bg-info p-3 rounded-circle">
+                                            <img src="asset/img/trx.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col ml-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                                Total Transaction</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">400</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card info shadow h-100 rounded-3  py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto bg-warning p-3 rounded-circle">
+                                            <img src="asset/img/flower.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col ml-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                                Total Items
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">130</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card warning shadow h-100 rounded-3  py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto bg-success p-3 rounded-circle">
+                                            <img src="asset/img/users.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col ml-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">
+                                                Total User</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">3k</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-2 mb-4">Plantsasri Revenue Sales Performance</h4>
+                    <div class="row flex-wrap">
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow-0 rounded-0 border-0">
+                                <div class="card-body">
+                                    <canvas id="doughnutChart" class="w-100" style="height: 250px;"></canvas>
+                                    <div class="row mt-3">
+                                        <div class="col-6 d-flex justify-content-center">
+                                            <div class="d-flex justify-content-center text-center flex-column">
+                                                <h6 class="text-dark text-bold">$3,095</h6>
+                                                <h6>Last Month</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 d-flex justify-content-center">
+                                            <div class="d-flex justify-content-center text-center flex-column">
+                                                <h6 class="text-dark text-bold">$2,763</h6>
+                                                <h6>This Month</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card m-2 shadow-0 rounded-0 border-0">
+                                <div class="card-body">
+                                    <canvas id="lineChart" style="width:100%"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-2 mb-4">New Transaction</h4>
+                    <div class="table-responsive">
+                        <table class="table" id="tabelTransaksi">
+                            <thead>
+                                <tr class="bg-white">
+                                    <th>#</th>
+                                    <th>Transaction Code</th>
+                                    <th>Recipient's Name</th>
+                                    <th>Recipient's Email </th>
+                                    <th>Destination</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white">
+                                    <td>1</td>
+                                    <td>TRX-12345</td>
+                                    <td>Akmal</td>
+                                    <td>@example.com</td>
+                                    <td>Jakarta</td>
+                                    <td><span class="badge p-2 badge-success">Done</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td>2</td>
+                                    <td>TRX-12345</td>
+                                    <td>Reza</td>
+                                    <td>@example.com</td>
+                                    <td>Jakarta</td>
+                                    <td><span class="badge p-2 badge-danger">Decline</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td>3</td>
+                                    <td>TRX-12345</td>
+                                    <td>Diaz</td>
+                                    <td>@example.com</td>
+                                    <td>Jakarta</td>
+                                    <td><span class="badge p-2 badge-warning">Waiting Approve</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white rounded">
+                                    <td>4</td>
+                                    <td>TRX-12345</td>
+                                    <td>Asep</td>
+                                    <td>@example.com</td>
+                                    <td>Jakarta</td>
+                                    <td><span class="badge p-2 badge-success">Done</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td>5</td>
+                                    <td>TRX-12345</td>
+                                    <td>Agus</td>
+                                    <td>@example.com</td>
+                                    <td>Jakarta</td>
+                                    <td><span class="badge p-2 badge-danger">Decline</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td>6</td>
+                                    <td>TRX-12345</td>
+                                    <td>Agus</td>
+                                    <td>@example.com</td>
+                                    <td>Jakarta</td>
+                                    <td><span class="badge p-2 badge-success">Done</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td>7</td>
+                                    <td>TRX-12345</td>
+                                    <td>Agus</td>
+                                    <td>@example.com</td>
+                                    <td>Jakarta</td>
+                                    <td><span class="badge p-2 badge-danger">Decline</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td>8</td>
+                                    <td>TRX-12345</td>
+                                    <td>Agus</td>
+                                    <td>@example.com</td>
+                                    <td>Jakarta</td>
+                                    <td><span class="badge p-2 badge-danger">Decline</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Detail</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-3"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="asset/vendor/jquery/jquery.min.js"></script>
+    <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="asset/js/sb-admin-2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="asset/js/script.js"></script>
+</body>
+
+</html>
